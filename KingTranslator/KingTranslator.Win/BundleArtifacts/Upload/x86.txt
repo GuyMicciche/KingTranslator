@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Guy\Desktop\KingTranslator\KingTranslator\KingTranslator.Win\bin\x86\Release\Upload\KingTranslator.Win_1.1.1.0_x86.appx
+SymbolPackage=C:\Users\Guy\Desktop\KingTranslator\KingTranslator\KingTranslator.Win\AppPackages\KingTranslator.Win_1.1.1.0\KingTranslator.Win_1.1.1.0_x86.appxsym

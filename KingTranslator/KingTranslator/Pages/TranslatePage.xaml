@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:KingTranslator;assembly=KingTranslator"
+             x:Class="KingTranslator.TranslatePage" x:Name="PageName">
+    <ContentPage.Content>
+
+        <Grid x:Name="perimeter">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                        iOS="16,0,0,0"
+                                                        Android="16,0,0,0"
+                                                        WinPhone="0,0,0,0" />
+                    </OnIdiom.Phone>
+                    <OnIdiom.Tablet>
+                        <OnPlatform x:TypeArguments="Thickness"
+                                                        iOS="16,0,0,0"
+                                                        Android="16,0,0,0"
+                                                        WinPhone="16,0,0,0" />
+                    </OnIdiom.Tablet>
+                </OnIdiom>
+            </Grid.Padding>
+
+            <StackLayout x:Name="resultsLayout" Grid.Row="0" Grid.Column="0">
+                <ScrollView>
+                    <StackLayout Spacing="5">
+                        <Label x:Name="pinyin"/>
+                        <Label x:Name="translatedPhrase"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <StackLayout x:Name="translatorLayout" Grid.Row="1" Grid.Column="0">
+                <StackLayout x:Name="buttons" HorizontalOptions="End" Orientation="Horizontal">
+                    <Button x:Name="chineseBtn" Text="Chinese" Clicked="ChineseButtonClicked" BorderRadius="0" BorderWidth="0" BorderColor="#FFB30808" />
+                    <Button x:Name="englishBtn" Text="English" Clicked="EnglishButtonClicked" BorderRadius="0" BorderWidth="0" BorderColor="#FFB30808" />
+                </StackLayout>
+                <Editor x:Name="phraseInput" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+        
+        <!--<StackLayout Padding="8" x:Name="perimeter">
+      <StackLayout HorizontalOptions="FillAndExpand">
+        <Entry x:Name="phraseInput" HeightRequest="100"/>
+        <StackLayout x:Name="buttons" HorizontalOptions="End" Orientation="Horizontal">
+          <Button x:Name="chineseBtn" Text="Chinese" Clicked="ChineseButtonClicked" BorderRadius="0" BorderWidth="0" BorderColor="#FFB30808" />
+          <Button x:Name="englishBtn" Text="English" Clicked="EnglishButtonClicked" BorderRadius="0" BorderWidth="0" BorderColor="#FFB30808" />
+        </StackLayout>
+        <StackLayout HorizontalOptions="Start">
+          <ScrollView>
+            <StackLayout Spacing="5">
+              <Label x:Name="pinyin"/>
+              <Label x:Name="translatedPhrase"/>
+            </StackLayout>
+          </ScrollView>
+        </StackLayout>
+      </StackLayout>
+    </StackLayout>-->
+    </ContentPage.Content>
+</ContentPage>

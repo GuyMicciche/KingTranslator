@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="MyTheme" parent="MyTheme.Base">
+
+  </style>
+
+  <!-- Base theme applied no matter what API -->
+  <style name="MyTheme.Base" parent="Theme.AppCompat">
+    <item name="windowNoTitle">true</item>
+    <!--We will be using the toolbar so no need to show ActionBar-->
+    <item name="windowActionBar">false</item>
+    <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+    <!-- colorPrimary is used for the default action bar background -->
+    <item name="colorPrimary">@color/primary</item>
+    <!-- colorPrimaryDark is used for the status bar -->
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <!-- colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets -->
+    <item name="colorAccent">@color/accent</item>
+    
+    <!-- Button style-->
+    <item name="android:colorButtonNormal">@color/primary</item>
+    <item name="colorButtonNormal">@color/controlHighlight</item>
+    
+    <item name="android:colorEdgeEffect">#FF4081</item>
+
+    <item name="colorControlHighlight">@color/accent</item>
+    <item name="colorControlNormal">@color/accent</item>
+    <item name="colorControlActivated">@color/accent</item>
+    <item name="colorSwitchThumbNormal">#FFFFFF</item>
+
+    <item name="android:windowBackground">@color/window_background</item>
+
+    <item name="alertDialogTheme">@style/AlertPopupMenu</item>
+    
+    <item name="android:colorPressedHighlight">@color/controlHighlight</item>
+    <item name="android:colorLongPressedHighlight">@color/controlHighlight</item>
+    <item name="android:colorFocusedHighlight">@color/controlHighlight</item>
+    <item name="android:colorActivatedHighlight">@color/controlHighlight</item>
+    <item name="android:activatedBackgroundIndicator">@color/controlHighlight</item>
+  	<!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight and colorSwitchThumbNormal. -->
+
+    <!--<item name="toolbarStyle">@style/DarkToolbar</item>-->
+  </style>
+
+  <style name="AlertPopupMenu" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+    <!-- Used for the buttons -->
+    <item name="colorAccent">@color/primary</item>
+    <!-- Used for the title and text -->
+    <item name="android:textColorPrimary">#303030</item>
+    <!-- Used for the background -->
+    <item name="android:background">@android:color/white</item>
+  </style>
+
+
+  <style name="LightToolbar" parent="Widget.AppCompat.Toolbar">
+    <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+    <item name="android:popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    <item name="android:background">#0087DC</item>
+  </style>
+  <style name="DarkToolbar" parent="Widget.AppCompat.Toolbar">
+    <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    <item name="android:popupTheme">@style/ThemeOverlay.AppCompat.Dark</item>
+    <item name="android:background">#ff0000</item>
+  </style>
+  <style name="AMOLEDToolbar" parent="DarkToolbar">
+    <item name="android:background">#000000</item>
+  </style>
+</resources>

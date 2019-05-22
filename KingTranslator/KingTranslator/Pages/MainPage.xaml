@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KingTranslator.MainPage">
+	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+</ContentPage-->
+
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:local="clr-namespace:KingTranslator;assembly=KingTranslator"
+          x:Class="KingTranslator.MainPage"
+          BackgroundColor="#FFB30808" x:Name="MainPage">
+  <ContentPage.Content>
+
+  </ContentPage.Content>
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style
+        TargetType="Button">
+        <Setter
+            Property="HorizontalOptions"
+            Value="Center" />
+        <Setter
+            Property="VerticalOptions"
+            Value="Center" />
+        <Setter
+            Property="TextColor"
+            Value="White" />
+        <Setter
+            Property="FontSize"
+            Value="Large" />
+      </Style>
+      <Style
+            TargetType="Label">
+        <Setter
+            Property="TextColor"
+            Value="White" />
+        <Setter
+            Property="FontSize"
+            Value="Large" />
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <!--<NavigationPage Title="T">
+    <x:Arguments>
+      <local:TranslatePage Title="Translate" />
+    </x:Arguments>
+  </NavigationPage>
+  <NavigationPage Title="D">
+    <x:Arguments>
+      <local:DictionaryPage Title="Dictionary" />
+    </x:Arguments>
+  </NavigationPage>
+  <NavigationPage Title="C">
+    <x:Arguments>
+      <local:CharacterPage Title="Characters" />
+    </x:Arguments>
+  </NavigationPage>-->
+</TabbedPage>

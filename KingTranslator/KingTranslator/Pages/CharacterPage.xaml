@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:KingTranslator;assembly=KingTranslator"
+             x:Class="KingTranslator.CharacterPage">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Grid x:Name="perimeter">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout x:Name="imageLayout" Grid.Row="0" Grid.Column="0">
+                    <ScrollView>
+                        <StackLayout>
+                            <Label x:Name="headerLabel"/>
+                            <Label x:Name="englishLabel"/>
+                            <Image x:Name="img" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+
+                <StackLayout x:Name="listLayout" Grid.Row="1" Grid.Column="0">
+                    <ListView CachingStrategy="RecycleElement" x:Name="characterList" RowHeight="40"/>
+                </StackLayout>
+            </Grid>
+            
+            <SearchBar x:Name="searchBar" Placeholder="Search..." />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,6 @@
+MainPackage=C:\Users\Guy\Desktop\KingTranslator\KingTranslator\KingTranslator.Win\bin\ARM\Release\Upload\KingTranslator.Win_1.1.1.0_ARM.appx
+SymbolPackage=C:\Users\Guy\Desktop\KingTranslator\KingTranslator\KingTranslator.Win\AppPackages\KingTranslator.Win_1.1.1.0\KingTranslator.Win_1.1.1.0_ARM.appxsym
+ResourcePack=C:\Users\Guy\Desktop\KingTranslator\KingTranslator\KingTranslator.Win\_scale-100.appx
+ResourcePack=C:\Users\Guy\Desktop\KingTranslator\KingTranslator\KingTranslator.Win\_scale-125.appx
+ResourcePack=C:\Users\Guy\Desktop\KingTranslator\KingTranslator\KingTranslator.Win\_scale-150.appx
+ResourcePack=C:\Users\Guy\Desktop\KingTranslator\KingTranslator\KingTranslator.Win\_scale-400.appx

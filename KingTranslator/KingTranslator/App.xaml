@@ -1,0 +1,11 @@
+﻿<Application
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="KingTranslator.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="backgroundColor">#FFB30808</Color>
+            <Color x:Key="textColor">White</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
